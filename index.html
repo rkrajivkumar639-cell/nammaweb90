@@ -1,221 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NammaWeb AI Learning Suite | Vibe Coding & Agentic AI</title>
-  <meta name="description" content="Elite Agentic AI & Vibe Coding cohort engineered for BE, B.Tech, and BCA undergraduates." />
+  <meta name="description" content="Elite Agentic AI & Vibe Coding acceleration suite for BE, B.Tech, and BCA engineering innovators. Master autonomous pipelines and modern software synthesis.">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            brand: { deep: '#041315', teal: '#0A4D4A', accent: '#138A82', gold: '#D4AF37' }
+            brand: {
+              teal: '#005f5f',
+              darkteal: '#003a3a',
+              gold: '#c5a059',
+              charcoal: '#0b0f12',
+              surface: '#12181d'
+            }
           },
           fontFamily: {
-            display: ['Cinzel', 'serif'],
-            sans: ['Plus Jakarta Sans', 'sans-serif']
+            serif: ['Cinzel', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
           }
         }
       }
-    };
+    }
   </script>
 </head>
-<body class="bg-brand-deep text-slate-200 font-sans antialiased selection:bg-brand-gold selection:text-black">
+<body class="bg-brand-charcoal text-slate-200 font-sans antialiased selection:bg-brand-gold selection:text-black">
 
-  <!-- Navigation -->
-  <nav class="sticky top-0 z-40 bg-brand-deep/90 backdrop-blur-md border-b border-teal-900/40 px-6 py-4 flex justify-between items-center max-w-7xl mx-auto">
-    <div class="flex items-center gap-3">
-      <div class="w-9 h-9 border border-brand-accent/50 p-1 flex items-center justify-center">
-        <svg viewBox="0 0 100 100" class="w-full h-full stroke-current text-brand-gold" fill="none" stroke-width="8">
-          <rect x="25" y="15" width="45" height="45" transform="rotate(45 50 40)" />
-          <rect x="25" y="45" width="45" height="45" transform="rotate(45 50 65)" />
-        </svg>
-      </div>
-      <span class="font-display font-bold text-xl tracking-wider text-white">NAMMAWEB</span>
-    </div>
-    <div class="flex items-center gap-6 text-sm tracking-wide">
-      <a href="#curriculum" class="hidden md:inline hover:text-brand-gold transition">CURRICULUM</a>
-      <a href="#pricing" class="hidden md:inline hover:text-brand-gold transition">ENROLLMENT</a>
-      <a href="blog.html" class="hover:text-brand-gold transition">SEO RESEARCH</a>
-      <a href="#pricing" class="bg-gradient-to-r from-brand-teal to-brand-accent px-5 py-2.5 rounded text-white font-semibold text-xs tracking-widest uppercase hover:brightness-110 shadow-lg shadow-teal-950/50">Apply Now</a>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="py-20 px-6 max-w-5xl mx-auto text-center">
-    <p class="text-xs uppercase tracking-widest text-brand-gold font-semibold mb-3">Mastery For BE • B.Tech • BCA</p>
-    <h1 class="font-display text-4xl sm:text-6xl text-white font-bold leading-tight mb-6">
-      The Premier Suite for <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-200 to-brand-gold">Vibe Coding & Agentic AI</span>
-    </h1>
-    <p class="max-w-2xl mx-auto text-slate-400 text-base sm:text-lg mb-8">
-      Architect enterprise-grade autonomous software ecosystems. Transition from manual syntax writing to high-leverage orchestrations with autonomous AI workers.
-    </p>
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="#pricing" class="bg-brand-gold text-brand-deep font-bold px-8 py-3.5 rounded text-sm tracking-wider uppercase hover:bg-yellow-400 transition">View Cohorts</a>
-      <a href="https://wa.me/917676546577?text=Hi%20NammaWeb,%20I%20want%20to%20learn%20more%20about%20the%20AI%20Suite." target="_blank" class="border border-brand-accent text-brand-accent px-8 py-3.5 rounded text-sm tracking-wider uppercase hover:bg-brand-accent/10 transition">Connect On WhatsApp</a>
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 w-full z-40 bg-brand-charcoal/90 backdrop-blur-md border-b border-brand-teal/20">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo.png" alt="NammaWeb Logo" class="h-10 w-10 object-contain rounded border border-brand-teal/40">
+        <span class="font-serif tracking-widest text-lg font-bold text-white uppercase">NammaWeb</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <a href="#overview" class="hover:text-brand-gold transition-colors">Architecture</a>
+        <a href="#gallery" class="hover:text-brand-gold transition-colors">Lab Workspace</a>
+        <a href="#pricing" class="hover:text-brand-gold transition-colors">Cohorts</a>
+        <a href="blog.html" class="hover:text-brand-gold transition-colors">SEO Insights</a>
+      </nav>
+      <a href="#pricing" class="hidden sm:inline-flex px-5 py-2.5 rounded-full border border-brand-gold text-brand-gold text-xs uppercase tracking-widest hover:bg-brand-gold hover:text-black font-semibold transition-all">Enroll Now</a>
     </div>
   </header>
 
-  <!-- 6-Line Core Manifesto -->
-  <section id="curriculum" class="py-16 px-6 max-w-4xl mx-auto border-t border-b border-teal-900/30">
-    <h2 class="text-xs uppercase tracking-widest text-brand-gold font-semibold text-center mb-8">Program Blueprint & Philosophy</h2>
-    <div class="space-y-4 text-slate-300 font-light leading-relaxed text-center sm:text-left sm:px-12">
-      <p class="flex items-start gap-3"><span class="text-brand-gold font-bold">01.</span> Tailored specifically for BE, B.Tech, and BCA students targeting high-bracket engineering roles.</p>
-      <p class="flex items-start gap-3"><span class="text-brand-gold font-bold">02.</span> Master Vibe Coding: write production-grade systems at the speed of thought via natural language orchestration.</p>
-      <p class="flex items-start gap-3"><span class="text-brand-gold font-bold">03.</span> Construct autonomous multi-agent swarms using CrewAI, AutoGen, and LangGraph architecture.</p>
-      <p class="flex items-start gap-3"><span class="text-brand-gold font-bold">04.</span> Ship enterprise-ready full-stack applications with production vector stores and memory pipelines.</p>
-      <p class="flex items-start gap-3"><span class="text-brand-gold font-bold">05.</span> Move beyond obsolete manual coding tutorials and enter the top 1% tier of high-yield AI architects.</p>
-      <p class="flex items-start gap-3"><span class="text-brand-gold font-bold">06.</span> Graduate with verifiable GitHub repositories, live deployed tools, and production-tested systems.</p>
+  <!-- Hero Section -->
+  <section class="pt-40 pb-20 px-6 max-w-7xl mx-auto text-center relative overflow-hidden">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-teal bg-brand-teal/10 text-brand-gold text-xs font-mono mb-6 uppercase tracking-wider">
+      Architected for BE • B.Tech • BCA Innovators
+    </div>
+    <h1 class="text-4xl sm:text-6xl font-serif text-white max-w-4xl mx-auto leading-tight">
+      Vibe Coding &amp; Agentic AI <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 via-brand-gold to-emerald-300">Executive Learning Suite</span>
+    </h1>
+    <p class="mt-6 text-slate-400 text-lg max-w-2xl mx-auto font-light leading-relaxed">
+      Synthesize enterprise applications at the speed of thought. Transition from traditional syntax bottlenecks to commanding autonomous multi-agent systems.
+    </p>
+    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="#pricing" class="px-8 py-4 rounded-lg bg-brand-gold text-black font-semibold tracking-wide hover:opacity-90 transition-opacity">Reserve Cohort Seat</a>
+      <button onclick="openWhatsAppPopup()" class="px-8 py-4 rounded-lg border border-slate-700 bg-brand-surface hover:border-brand-teal transition-colors flex items-center justify-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span> Admissions Concierge
+      </button>
     </div>
   </section>
 
-  <!-- Visual Showcase (4 High-Resolution Gallery Items) -->
-  <section class="py-20 px-6 max-w-7xl mx-auto">
-    <div class="text-center mb-12">
-      <h2 class="font-display text-3xl font-bold text-white">Autonomous Labs & Environment</h2>
-      <p class="text-slate-400 text-sm mt-2">Inside our high-throughput AI workspaces</p>
+  <!-- 6-Line Concise Technical Narrative -->
+  <section id="overview" class="py-20 bg-brand-surface border-y border-brand-teal/20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-brand-gold mb-4 text-center">Curriculum Framework</h2>
+      <h3 class="text-2xl sm:text-3xl font-serif text-white text-center mb-8">Six Strategic Pillars for Engineering Students</h3>
+      <div class="space-y-4 font-mono text-sm leading-relaxed border-l-2 border-brand-teal/40 pl-6 text-slate-300">
+        <p><span class="text-brand-gold font-bold">01.</span> Tailored specifically for BE, B.Tech, and BCA undergraduates ready to replace legacy software engineering paradigms.</p>
+        <p><span class="text-brand-gold font-bold">02.</span> Vibe coding cultivates flow-state engineering through intuitive, high-level intent translation rather than line-by-line syntax writing.</p>
+        <p><span class="text-brand-gold font-bold">03.</span> Agentic AI architectures train students to orchestrate autonomous multi-agent loops that plan, write, test, and correct code.</p>
+        <p><span class="text-brand-gold font-bold">04.</span> Immersive hands-on laboratories build scalable tool use, vector indexing, structured retrieval, and self-healing deployment scripts.</p>
+        <p><span class="text-brand-gold font-bold">05.</span> Continuous code audits verify real-time execution safety, rigorous guardrails, and enterprise-grade system resilience.</p>
+        <p><span class="text-brand-gold font-bold">06.</span> Graduates walk away with functional, high-value autonomous agent systems ready for global tech portfolios and startup incubation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Gallery (4 Focus Visuals) -->
+  <section id="gallery" class="py-24 max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-brand-gold mb-2">Immersive Experience</h2>
+      <h3 class="text-3xl font-serif text-white">Vibe Coding &amp; Agentic R&amp;D Suites</h3>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      <div class="border border-teal-900/40 rounded-lg overflow-hidden bg-slate-900/40">
-        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" alt="Vibe Coding IDE" class="h-48 w-full object-cover">
-        <div class="p-4">
-          <h3 class="text-brand-gold font-semibold text-sm">Vibe Coding Workspace</h3>
-          <p class="text-slate-400 text-xs mt-1">Prompt-driven syntax iteration and IDE copilot tooling.</p>
+      <div class="bg-brand-surface border border-slate-800 rounded-xl overflow-hidden hover:border-brand-teal transition-colors group">
+        <div class="h-48 overflow-hidden bg-slate-900">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Vibe Coding Flow State" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-5">
+          <h4 class="font-semibold text-white text-base">Intuitive Vibe Coding</h4>
+          <p class="text-xs text-slate-400 mt-2">Zero-drag natural syntax translation into production backends.</p>
         </div>
       </div>
-      <div class="border border-teal-900/40 rounded-lg overflow-hidden bg-slate-900/40">
-        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Agent Swarms" class="h-48 w-full object-cover">
-        <div class="p-4">
-          <h3 class="text-brand-gold font-semibold text-sm">Agentic Swarm Pipeline</h3>
-          <p class="text-slate-400 text-xs mt-1">Autonomous multi-agent loops and validation gates.</p>
+      <div class="bg-brand-surface border border-slate-800 rounded-xl overflow-hidden hover:border-brand-teal transition-colors group">
+        <div class="h-48 overflow-hidden bg-slate-900">
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Agentic AI Autonomous Networks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-5">
+          <h4 class="font-semibold text-white text-base">Multi-Agent Swarms</h4>
+          <p class="text-xs text-slate-400 mt-2">Self-correcting, tool-calling autonomous agent orchestrations.</p>
         </div>
       </div>
-      <div class="border border-teal-900/40 rounded-lg overflow-hidden bg-slate-900/40">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Student Deployment" class="h-48 w-full object-cover">
-        <div class="p-4">
-          <h3 class="text-brand-gold font-semibold text-sm">BE / B.Tech Lab Teams</h3>
-          <p class="text-slate-400 text-xs mt-1">Undergraduate peer sprints and collaborative deployments.</p>
+      <div class="bg-brand-surface border border-slate-800 rounded-xl overflow-hidden hover:border-brand-teal transition-colors group">
+        <div class="h-48 overflow-hidden bg-slate-900">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=600&q=80" alt="BE BTech BCA Collaborative Lab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-5">
+          <h4 class="font-semibold text-white text-base">Engineering Cohort R&amp;D</h4>
+          <p class="text-xs text-slate-400 mt-2">Collaborative architecture sprints dedicated to college technologists.</p>
         </div>
       </div>
-      <div class="border border-teal-900/40 rounded-lg overflow-hidden bg-slate-900/40">
-        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Architect Certification" class="h-48 w-full object-cover">
-        <div class="p-4">
-          <h3 class="text-brand-gold font-semibold text-sm">Production Certifications</h3>
-          <p class="text-slate-400 text-xs mt-1">Validation of completed live autonomous platforms.</p>
+      <div class="bg-brand-surface border border-slate-800 rounded-xl overflow-hidden hover:border-brand-teal transition-colors group">
+        <div class="h-48 overflow-hidden bg-slate-900">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80" alt="Hardware & Agent Integration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-5">
+          <h4 class="font-semibold text-white text-base">Production Microservices</h4>
+          <p class="text-xs text-slate-400 mt-2">Full CI/CD integration, vector indexing, and memory state machines.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Pricing / Booking Section -->
-  <section id="pricing" class="py-20 px-6 max-w-7xl mx-auto">
-    <div class="text-center mb-16">
-      <h2 class="font-display text-3xl sm:text-4xl font-bold text-white">Cohort Enrollment Tiers</h2>
-      <p class="text-slate-400 text-sm mt-2">Transparent tuition priced for undergraduate technologists in India</p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- 30 Days -->
-      <div class="border border-teal-900/50 bg-slate-950/60 p-8 rounded-xl flex flex-col justify-between">
-        <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-teal-400">Sprint</span>
-          <h3 class="font-display text-2xl font-bold text-white mt-1">30 Days</h3>
-          <p class="text-slate-400 text-xs mt-2">Foundations of Agentic Systems & Prompt Coding</p>
-          <div class="text-3xl font-bold text-brand-gold my-6">₹9,999 <span class="text-xs text-slate-500 font-normal">INR</span></div>
-          <ul class="text-xs text-slate-300 space-y-3">
-            <li>✓ Prompt syntax architecture</li>
-            <li>✓ Single autonomous agent workflows</li>
-            <li>✓ Streamlit & FastAPI micro-apps</li>
-            <li>✓ GitHub deployment workflows</li>
-          </ul>
-        </div>
-        <a href="https://wa.me/917676546577?text=Reserve%2030-day%20seat" class="mt-8 block w-full text-center py-3 border border-teal-700 hover:bg-brand-teal/30 rounded text-xs font-semibold tracking-wider uppercase text-white transition">Reserve Seat</a>
+  <section id="pricing" class="py-24 bg-brand-surface/60 border-t border-brand-teal/20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-brand-gold mb-2">Select Your Runway</h2>
+        <h3 class="text-3xl font-serif text-white">Direct Cohort Admission</h3>
+        <p class="text-slate-400 text-sm mt-2">Transparent INR pricing designed for high-performing engineering candidates.</p>
       </div>
-
-      <!-- 60 Days -->
-      <div class="border-2 border-brand-gold bg-slate-900/80 p-8 rounded-xl flex flex-col justify-between relative shadow-2xl shadow-yellow-950/20">
-        <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-gold text-brand-deep px-3 py-1 text-[10px] font-bold uppercase tracking-widest rounded-full">Most Popular</span>
-        <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-brand-gold">Practitioner</span>
-          <h3 class="font-display text-2xl font-bold text-white mt-1">60 Days</h3>
-          <p class="text-slate-400 text-xs mt-2">Multi-Agent Swarms & Vector Production</p>
-          <div class="text-3xl font-bold text-brand-gold my-6">₹18,499 <span class="text-xs text-slate-500 font-normal">INR</span></div>
-          <ul class="text-xs text-slate-300 space-y-3">
-            <li>✓ Everything in 30 Days</li>
-            <li>✓ Multi-agent swarms (CrewAI & LangGraph)</li>
-            <li>✓ Vector DB storage & RAG optimizations</li>
-            <li>✓ Portfolio review & interview coaching</li>
-          </ul>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- 30 Days -->
+        <div class="border border-slate-800 bg-brand-surface p-8 rounded-2xl flex flex-col justify-between hover:border-brand-teal transition-all">
+          <div>
+            <div class="text-xs font-mono text-brand-teal uppercase font-bold tracking-widest">Sprint Program</div>
+            <h4 class="text-xl font-bold text-white mt-1">30 Days Accelerated</h4>
+            <div class="mt-6 mb-6">
+              <span class="text-4xl font-serif text-white">₹14,999</span>
+              <span class="text-xs text-slate-400 block mt-1">One-time payment • All inclusive</span>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-300 font-light mb-8">
+              <li>✓ Fundamentals of Vibe Coding & LLM Harnesses</li>
+              <li>✓ Basic Agentic Tool Execution</li>
+              <li>✓ 2 Production Micro-Projects</li>
+              <li>✓ BE / B.Tech / BCA Portfolio Starter</li>
+            </ul>
+          </div>
+          <button onclick="initiateBooking('30 Days Accelerated', '14999')" class="w-full py-3 rounded-lg border border-brand-teal text-white hover:bg-brand-teal transition-all text-xs uppercase tracking-widest font-semibold">Reserve 30-Day Track</button>
         </div>
-        <a href="https://wa.me/917676546577?text=Reserve%2060-day%20seat" class="mt-8 block w-full text-center py-3 bg-brand-gold hover:bg-yellow-400 text-brand-deep rounded text-xs font-bold tracking-wider uppercase transition">Reserve Seat</a>
-      </div>
 
-      <!-- 125 Days -->
-      <div class="border border-teal-900/50 bg-slate-950/60 p-8 rounded-xl flex flex-col justify-between">
-        <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-teal-400">Fellowship</span>
-          <h3 class="font-display text-2xl font-bold text-white mt-1">125 Days</h3>
-          <p class="text-slate-400 text-xs mt-2">Full Enterprise System Architecture & Placement Track</p>
-          <div class="text-3xl font-bold text-brand-gold my-6">₹34,999 <span class="text-xs text-slate-500 font-normal">INR</span></div>
-          <ul class="text-xs text-slate-300 space-y-3">
-            <li>✓ Everything in 60 Days</li>
-            <li>✓ Fine-tuning & low-latency inference models</li>
-            <li>✓ Enterprise scale autonomous pipelines</li>
-            <li>✓ 1-on-1 industry mentor allocation</li>
-          </ul>
+        <!-- 60 Days -->
+        <div class="border-2 border-brand-gold bg-brand-surface p-8 rounded-2xl relative flex flex-col justify-between shadow-2xl shadow-brand-gold/5">
+          <span class="absolute -top-3.5 right-6 px-3 py-1 bg-brand-gold text-black font-bold text-[10px] uppercase tracking-widest rounded-full">Most Recommended</span>
+          <div>
+            <div class="text-xs font-mono text-brand-gold uppercase font-bold tracking-widest">Mastery Program</div>
+            <h4 class="text-xl font-bold text-white mt-1">60 Days Agentic Core</h4>
+            <div class="mt-6 mb-6">
+              <span class="text-4xl font-serif text-white">₹27,999</span>
+              <span class="text-xs text-slate-400 block mt-1">One-time payment • Installments available</span>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-300 font-light mb-8">
+              <li>✓ Advanced Multi-Agent Planning Architecture</li>
+              <li>✓ Self-Healing Testing & Deployment Workflows</li>
+              <li>✓ Vector Retrieval & State Memory Graphs</li>
+              <li>✓ 5 Enterprise Scaled Applications</li>
+              <li>✓ 1-on-1 Architecture Reviews</li>
+            </ul>
+          </div>
+          <button onclick="initiateBooking('60 Days Agentic Core', '27999')" class="w-full py-3 rounded-lg bg-brand-gold text-black hover:opacity-95 transition-all text-xs uppercase tracking-widest font-bold">Reserve 60-Day Track</button>
         </div>
-        <a href="https://wa.me/917676546577?text=Reserve%20125-day%20seat" class="mt-8 block w-full text-center py-3 border border-teal-700 hover:bg-brand-teal/30 rounded text-xs font-semibold tracking-wider uppercase text-white transition">Reserve Seat</a>
+
+        <!-- 125 Days -->
+        <div class="border border-slate-800 bg-brand-surface p-8 rounded-2xl flex flex-col justify-between hover:border-brand-teal transition-all">
+          <div>
+            <div class="text-xs font-mono text-brand-teal uppercase font-bold tracking-widest">Fellowship</div>
+            <h4 class="text-xl font-bold text-white mt-1">125 Days Deep Suite</h4>
+            <div class="mt-6 mb-6">
+              <span class="text-4xl font-serif text-white">₹49,999</span>
+              <span class="text-xs text-slate-400 block mt-1">One-time payment • Premium mentorship</span>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-300 font-light mb-8">
+              <li>✓ Full Autonomous Agent Incubator</li>
+              <li>✓ Open-Source Model Fine-Tuning & Quantization</li>
+              <li>✓ Commercial IP Creation & Capstone Defense</li>
+              <li>✓ Placement & Startup Venture Assistance</li>
+            </ul>
+          </div>
+          <button onclick="initiateBooking('125 Days Deep Suite', '49999')" class="w-full py-3 rounded-lg border border-brand-teal text-white hover:bg-brand-teal transition-all text-xs uppercase tracking-widest font-semibold">Reserve 125-Day Track</button>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Luxury Footer -->
-  <footer class="border-t border-teal-900/40 py-16 px-6 bg-black/50 text-center">
-    <div class="flex flex-col items-center justify-center gap-3 mb-4">
+  <!-- Footer -->
+  <footer class="py-16 border-t border-brand-teal/20 bg-brand-charcoal px-6">
+    <div class="max-w-7xl mx-auto flex flex-col items-center text-center space-y-4">
       <div class="flex items-center gap-3">
-        <!-- SVG Vector derived directly from supplied emblem -->
-        <svg viewBox="0 0 100 100" class="w-8 h-8 stroke-current text-teal-500" fill="none" stroke-width="7">
-          <rect x="25" y="15" width="45" height="45" transform="rotate(45 50 40)" />
-          <rect x="25" y="45" width="45" height="45" transform="rotate(45 50 65)" />
-        </svg>
-        <span class="font-display font-bold text-2xl text-white tracking-widest">NAMMAWEB</span>
+        <img src="logo.png" alt="NammaWeb Logo" class="h-12 w-12 object-contain rounded border border-brand-teal/30">
+        <span class="font-serif tracking-widest text-xl font-bold text-white uppercase">NammaWeb</span>
       </div>
-      <a href="mailto:info@nammaweb.com" class="text-xs tracking-wider text-slate-400 hover:text-brand-gold transition">info@nammaweb.com</a>
+      <a href="mailto:info@nammaweb.com" class="text-slate-400 hover:text-brand-gold transition-colors font-mono text-sm">info@nammaweb.com</a>
+      <p class="text-xs text-slate-600 max-w-sm">NammaWeb AI Learning Suite. Dedicated to technical excellence in Agentic AI and Vibe Coding for BE, B.Tech, and BCA leaders.</p>
     </div>
-    <p class="text-[11px] text-slate-600 uppercase tracking-widest">© 2026 NammaWeb AI Learning Suite. All Rights Reserved.</p>
   </footer>
 
-  <!-- High-Conversion Sticky WhatsApp Bar & Modal -->
-  <div class="fixed bottom-4 right-4 z-50">
-    <a href="https://wa.me/917676546577?text=Hi%20NammaWeb,%20I%20have%20an%20inquiry%20regarding%20the%20AI%20cohort." target="_blank" class="flex items-center gap-2 bg-[#25D366] text-slate-950 font-bold px-4 py-3 rounded-full shadow-2xl hover:scale-105 transition-transform duration-200">
-      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.159.57 4.185 1.564 5.939l-1.564 5.717 5.86-1.537c1.685.918 3.607 1.43 5.65 1.43 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/></svg>
-      <span class="text-xs">Chat: 7676546577</span>
-    </a>
-  </div>
-
-  <!-- Interactive 5-Second Modal Pop-Up -->
-  <div id="leadModal" class="hidden fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 backdrop-blur-sm">
-    <div class="bg-brand-deep border border-brand-gold/60 rounded-xl max-w-sm w-full p-6 text-center relative shadow-2xl">
-      <button onclick="document.getElementById('leadModal').classList.add('hidden')" class="absolute top-3 right-3 text-slate-400 hover:text-white text-lg font-bold">✕</button>
-      <div class="w-12 h-12 border border-brand-gold mx-auto mb-3 flex items-center justify-center">
-        <svg viewBox="0 0 100 100" class="w-6 h-6 stroke-current text-brand-gold" fill="none" stroke-width="8">
-          <rect x="25" y="15" width="45" height="45" transform="rotate(45 50 40)" />
-          <rect x="25" y="45" width="45" height="45" transform="rotate(45 50 65)" />
-        </svg>
+  <!-- WhatsApp Pop-in Modal (Triggered by button or 6-sec timer) -->
+  <div id="whatsappModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-brand-surface border border-brand-teal p-6 sm:p-8 rounded-2xl max-w-md w-full relative shadow-2xl">
+      <button onclick="closeWhatsAppPopup()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-lg font-bold">✕</button>
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-3 h-3 bg-emerald-500 rounded-full animate-ping"></div>
+        <span class="text-xs font-mono tracking-widest text-brand-gold uppercase">Direct Admissions Desk</span>
       </div>
-      <h4 class="font-display font-bold text-white text-lg">Direct Admission Inquiry</h4>
-      <p class="text-xs text-slate-300 mt-2">Connect instantly with our program advisor on WhatsApp to lock in current seat pricing.</p>
-      <p class="text-brand-gold font-bold text-base mt-3">+91 7676546577</p>
-      <a href="https://wa.me/917676546577?text=Hi%20NammaWeb,%20please%20send%20cohort%20brochure." target="_blank" class="mt-5 block w-full bg-[#25D366] hover:bg-[#1EBE5D] text-slate-950 font-bold py-2.5 rounded text-xs uppercase tracking-wider transition">Open In WhatsApp</a>
+      <h3 class="text-xl font-serif text-white">Instant Consultation</h3>
+      <p class="text-xs text-slate-300 mt-2 mb-6">Connect directly with our admissions lead via WhatsApp (+91 7676546577) to discuss BE/B.Tech/BCA batch timings, curriculum, and seat availability.</p>
+      
+      <a id="whatsappLink" href="https://wa.me/917676546577?text=Hello%20NammaWeb,%20I%20am%20interested%20in%20the%20Vibe%20Coding%20and%20Agentic%20AI%20Suite." target="_blank" rel="noopener noreferrer" class="block w-full text-center py-3.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm transition-all shadow-lg">
+        Chat on WhatsApp (7676546577)
+      </a>
     </div>
   </div>
 
   <script>
-    setTimeout(() => {
-      document.getElementById('leadModal').classList.remove('hidden');
-    }, 5000);
+    const modal = document.getElementById('whatsappModal');
+    
+    function openWhatsAppPopup() {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+    
+    function closeWhatsAppPopup() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function initiateBooking(planName, price) {
+      const msg = encodeURIComponent(`Hello NammaWeb Admissions, I want to enroll in the ${planName} (₹${price}) for Vibe Coding & Agentic AI.`);
+      window.open(`https://wa.me/917676546577?text=${msg}`, '_blank');
+    }
+
+    // Gentle 6-second pop-in trigger for marketing conversion
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        openWhatsAppPopup();
+      }, 6000);
+    });
   </script>
 </body>
 </html>
